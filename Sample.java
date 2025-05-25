@@ -8,6 +8,12 @@
 // Any problem you faced while coding this : No
 
 // Your code here along with comments explaining your approach
+/*
+ I'm using two stacks to implement the queue. It can be done in two ways. Either make the push operation sotly or pop costly
+  I'm moving all the elements to a new stack before pushing , pushing the element and moving back the elements.
+  This reverses the elements and implements FIFO. 
+  Now the queue is implemented
+ */
 class MyQueue {
     int size;
     Stack<Integer> st1;
@@ -67,12 +73,7 @@ class MyQueue {
     }
 }
 
-/*
- I'm using two stacks to implement the queue. It can be done in two ways. Either make the push operation sotly or pop costly
-  I'm moving all the elements to a new stack before pushing , pushing the element and moving back the elements.
-  This reverses the elements and implements FIFO. 
-  Now the queue is implemented
- */
+
 
 
 // Time Complexity :
@@ -84,6 +85,10 @@ class MyQueue {
 // Any problem you faced while coding this : No
 
 // Your code here along with comments explaining your approach
+/*
+I have used two arraya sof size 10^6+1 . one to store values and the others to store if it is pesent or not. Instead of this 
+we can also insert -1 in the array and send the value directly
+*/
 class MyHashMap {
     int [] vals;
     boolean [] has;
@@ -109,7 +114,3 @@ class MyHashMap {
     }
 }
 
-/*
-I have used two arraya sof size 10^6+1 . one to store values and the others to store if it is pesent or not. Instead of this 
-we can also insert -1 in the array and send the value directly
-*/
